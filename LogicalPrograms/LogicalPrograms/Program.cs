@@ -10,6 +10,7 @@ namespace LogicalPrograms
             Console.WriteLine("2:PrimeNumber program");
             Console.WriteLine("3:Perfect Number program");
             Console.WriteLine("4:Reverse a number program");
+            Console.WriteLine("5:StopWatch program");
 
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -36,6 +37,14 @@ namespace LogicalPrograms
                     reverse.ReverseANumber();
                     break;
 
+                case 5:
+                    StopWatchProgram stopwatch = new StopWatchProgram();
+                    stopwatch.StopWatch();
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid number entered");
+                    break;
             }
         }
     }
