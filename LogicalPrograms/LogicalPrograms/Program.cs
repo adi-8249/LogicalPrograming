@@ -8,6 +8,8 @@ namespace LogicalPrograms
         {
             Console.WriteLine("1:Fibonacci series program");
             Console.WriteLine("2:PrimeNumber program");
+            Console.WriteLine("3:Perfect Number program");
+
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -22,6 +24,12 @@ namespace LogicalPrograms
                     PrimeNumber primenumber = new PrimeNumber();
                     primenumber.PrimeNumberCheck();
                     break;
+
+                case 3:
+                    PerfectNumber perfectnumber = new PerfectNumber();
+                    perfectnumber.PerfectNumberProgram();
+                    break;
+
             }
         }
     }
