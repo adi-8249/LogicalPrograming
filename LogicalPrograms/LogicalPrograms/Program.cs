@@ -9,6 +9,7 @@ namespace LogicalPrograms
             Console.WriteLine("1:Fibonacci series program");
             Console.WriteLine("2:PrimeNumber program");
             Console.WriteLine("3:Perfect Number program");
+            Console.WriteLine("4:Reverse a number program");
 
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -28,6 +29,11 @@ namespace LogicalPrograms
                 case 3:
                     PerfectNumber perfectnumber = new PerfectNumber();
                     perfectnumber.PerfectNumberProgram();
+                    break;
+
+                case 4:
+                    ReverseNumber reverse = new ReverseNumber();
+                    reverse.ReverseANumber();
                     break;
 
             }
